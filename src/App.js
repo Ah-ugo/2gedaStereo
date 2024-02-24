@@ -7,6 +7,7 @@ import More from "./Pages/More";
 import DownloadSongs1 from "./Pages/DownloadSongs1";
 import LayoutMain from "./Layout/LayoutMain";
 import BigHit from "./Pages/bigHit";
+import Welcome from "./Pages/Welcome";
 
 function App() {
   const theme = extendTheme({
@@ -43,6 +44,7 @@ function App() {
           <Route path="/more" element={<More />} />
           <Route path="/download1" element={<DownloadSongs1 />} />
           <Route path="/bighit" element={<BigHit />} />
+          <Route path="/welcome" element={<Welcome />} />
         </Routes>
       </BrowserRouter>
     </NativeBaseProvider>
