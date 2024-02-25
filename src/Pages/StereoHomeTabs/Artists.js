@@ -1,35 +1,41 @@
-import React from "react";
+import React, { useState } from "react";
 import ArtistTabCard from "../../Components/ArtistTabCard";
 import Ad from "../../Assets/AD.jpeg";
+import Modal from "../../Components/Modals/ModalWrapper1";
+import ArtistProfile from "../ArtistProfile";
 
 export default function Artists() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleOpenModal = () => setIsOpen(true);
+  const handleCloseModal = () => setIsOpen(false);
   return (
     <div className="mx-4">
       <div className="grid grid-cols-3 sm:grid-cols-6">
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
-        <ArtistTabCard />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
+        <ArtistTabCard onClick={handleOpenModal} />
       </div>
       {/* ad */}
       <div className="mt-4" style={{}}>
@@ -43,6 +49,11 @@ export default function Artists() {
           }}
         />
       </div>
+      {isOpen && (
+        <Modal isOpen={isOpen} onClose={handleCloseModal}>
+          <ArtistProfile />
+        </Modal>
+      )}
     </div>
   );
 }

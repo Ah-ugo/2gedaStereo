@@ -187,7 +187,7 @@
   color: #fff;
 }
 li {
-  list-style: none;
+  /* list-style: none; */
 }
 .lout {
   margin-top: 10rem;

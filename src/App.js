@@ -1,5 +1,5 @@
 import logo from "./logo.svg";
-import "./App.css";
+// import "./App.css";
 import { HStack, NativeBaseProvider, extendTheme } from "native-base";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
@@ -8,6 +8,7 @@ import DownloadSongs1 from "./Pages/DownloadSongs1";
 import LayoutMain from "./Layout/LayoutMain";
 import BigHit from "./Pages/bigHit";
 import Welcome from "./Pages/Welcome";
+import ArtistProfile from "./Pages/ArtistProfile";
 
 function App() {
   const theme = extendTheme({
@@ -45,6 +46,7 @@ function App() {
           <Route path="/download1" element={<DownloadSongs1 />} />
           <Route path="/bighit" element={<BigHit />} />
           <Route path="/welcome" element={<Welcome />} />
+          <Route path="/artistProfile" element={<ArtistProfile />} />
         </Routes>
       </BrowserRouter>
     </NativeBaseProvider>
