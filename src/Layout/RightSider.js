@@ -138,6 +138,41 @@ export default function RightSider() {
         </div>
       )}
 
+      {activeTab === 1 && (
+        <div className="grid grid-cols-1 gap-2 mt-4 justify-center align-middle items-center md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2">
+          <LibraryCard
+            img={require("../Assets/Component 14.png")}
+            title={"Liked songs"}
+            no={"85"}
+          />
+          <AlbumCard
+            img={require("../Assets/Image2.jpeg")}
+            title={"Are we annoyed?"}
+            artist={"Billie Eilish"}
+          />
+          <LibraryCard
+            img={require("../Assets/Component 14.png")}
+            title={"Liked songs"}
+            no={"85"}
+          />
+          <AlbumCard
+            img={require("../Assets/Image2.jpeg")}
+            title={"Are we annoyed?"}
+            artist={"Billie Eilish"}
+          />
+          <LibraryCard
+            img={require("../Assets/Component 14.png")}
+            title={"Liked songs"}
+            no={"85"}
+          />
+          <AlbumCard
+            img={require("../Assets/Image2.jpeg")}
+            title={"Are we annoyed?"}
+            artist={"Billie Eilish"}
+          />
+        </div>
+      )}
+
       {activeTab === 2 && (
         <div className="grid grid-cols-1 gap-2 mt-4 justify-center align-middle items-center md:grid-cols-1 lg:grid-cols-1 xl:grid-cols-2">
           <AlbumCard
@@ -174,7 +209,7 @@ export default function RightSider() {
       )}
 
       {activeTab === 3 && (
-        <div className="grid grid-cols-1 gap-2 mt-4 justify-center align-middle items-center md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-2 mt-4 justify-center align-middle items-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
           <ArtistTabCard onClick={handleOpenModal} />
           <ArtistTabCard onClick={handleOpenModal} />
           <ArtistTabCard onClick={handleOpenModal} />

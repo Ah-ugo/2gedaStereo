@@ -57,8 +57,8 @@ export default function LayoutMain({ children }) {
         <div className="col-span-10">
           <DesktopNavbar />
           <div className="grid grid-cols-12">
-            <div className="col-span-8">{children}</div>
-            <div className="col-span-4">
+            <div className="col-span-7">{children}</div>
+            <div className="col-span-5">
               <RightSider />
             </div>
           </div>
