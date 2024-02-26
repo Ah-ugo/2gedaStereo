@@ -5,16 +5,16 @@ import TopSongsCard from "../Components/TopSongsCard";
 import RightIcon from "../Assets/icon-park_right.svg";
 import SpecialPicksCard from "../Components/SpecialPicksCard";
 
-const ArtistProfile = ({ handleArtistProClose }) => {
+const ArtistProfile = ({ handleArtistProClose, onClick }) => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    <div>
+    <div className="xl:pt-40">
       {/* header */}
       <header className="hidden sm:block">
         <div className="flex justify-between items-center py-5 px-5 container">
-          <button>
+          <button onClick={onClick}>
             <img src={Arrow} />
           </button>
           <p className="font-medium text-4xl">Artist profile</p>
@@ -24,7 +24,7 @@ const ArtistProfile = ({ handleArtistProClose }) => {
       </header>
       <header className="block sm:hidden">
         <div className="flex justify-between items-center py-5 px-5 container">
-          <button>
+          <button onClick={onClick}>
             <img src={Arrow} />
           </button>
           <p className="font-bold text-xl">Profile</p>

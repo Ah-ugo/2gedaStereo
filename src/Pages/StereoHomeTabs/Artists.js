@@ -11,7 +11,7 @@ export default function Artists() {
   const handleCloseModal = () => setIsOpen(false);
   return (
     <div className="mx-4">
-      <div className="grid grid-cols-3 sm:grid-cols-6">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-6">
         <ArtistTabCard onClick={handleOpenModal} />
         <ArtistTabCard onClick={handleOpenModal} />
         <ArtistTabCard onClick={handleOpenModal} />
@@ -51,7 +51,7 @@ export default function Artists() {
       </div>
       {isOpen && (
         <Modal isOpen={isOpen} onClose={handleCloseModal}>
-          <ArtistProfile />
+          <ArtistProfile onClick={handleCloseModal} />
         </Modal>
       )}
     </div>

@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
+import "./style.css";
+
 const Modal = ({ isOpen, onClose, children }) => {
   const [isBackdropVisible, setIsBackdropVisible] = useState(false);
   const modalRef = useRef(null);
@@ -24,18 +26,19 @@ const Modal = ({ isOpen, onClose, children }) => {
 
   return (
     <div
-      className={`fixed inset-0 z-50 flex items-center overflow-y-auto justify-center ${
+      className={`fixed inset-0 z-50 flex pt-96 md:pt-5 lg:pt-96 xl:pt-96 items-center overflow-y-auto justify-center ${
         isBackdropVisible ? "backdrop-open" : ""
       }`}
-      onClick={handleClose}>
+      //   onClick={handleClose}
+    >
       <div
-        className={`bg-white rounded-lg p-4 overflow-y-auto shadow-md mx-10 ${
+        className={`bg-white rounded-lg p-4 mt-96 md:mt-5 lg:mt-16 xl:mt-16 overflow-y-auto shadow-md mx-10 ${
           children ? "overflow-auto" : ""
         }`}
         ref={modalRef}>
         {children}
         <button
-          className="mt-4 bg-gray-500 text-white px-4 py-2 rounded font-bold focus:outline-none"
+          className="mt-4 bg-[#4F0DA3] text-white px-4 py-2 rounded font-bold focus:outline-none"
           onClick={onClose}>
           Close
         </button>
