@@ -253,7 +253,7 @@ export default function Home() {
                     gap: 10,
                     overflowX: "scroll",
                     scrollbarWidth: "none",
-                    justifyContent: justifyContent,
+                    justifyContent: "space-between",
                     height: "100%",
                     // position: "unset"
                   }}>

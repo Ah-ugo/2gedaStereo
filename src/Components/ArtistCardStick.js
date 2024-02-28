@@ -8,6 +8,7 @@ export default function ArtistCardStick() {
         <img src={Artist} className="w-[35px] h-[35px] rounded-full" />
         <p className="font-normal text-sm">Bella Shrmuda</p>
       </div>
+      <button className="bg-[#4F0DA3] py-1">Stick</button>
     </div>
   );
 }

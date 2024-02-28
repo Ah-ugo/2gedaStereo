@@ -9,6 +9,7 @@ import LayoutMain from "./Layout/LayoutMain";
 import BigHit from "./Pages/bigHit";
 import Welcome from "./Pages/Welcome";
 import ArtistProfile from "./Pages/ArtistProfile";
+import UploadMusic from "./Pages/UploadMusic";
 
 function App() {
   const theme = extendTheme({
@@ -47,6 +48,7 @@ function App() {
           <Route path="/bighit" element={<BigHit />} />
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/artistProfile" element={<ArtistProfile />} />
+          <Route path="/uploadMusic" element={<UploadMusic />} />
         </Routes>
       </BrowserRouter>
     </NativeBaseProvider>
