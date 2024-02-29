@@ -10,6 +10,7 @@ import BigHit from "./Pages/bigHit";
 import Welcome from "./Pages/Welcome";
 import ArtistProfile from "./Pages/ArtistProfile";
 import UploadMusic from "./Pages/UploadMusic";
+import RecentUploads from "./Pages/UploadMusic/recentUploads";
 
 function App() {
   const theme = extendTheme({
@@ -49,6 +50,7 @@ function App() {
           <Route path="/welcome" element={<Welcome />} />
           <Route path="/artistProfile" element={<ArtistProfile />} />
           <Route path="/uploadMusic" element={<UploadMusic />} />
+          <Route path="/recentUpload" element={<RecentUploads />} />
         </Routes>
       </BrowserRouter>
     </NativeBaseProvider>
