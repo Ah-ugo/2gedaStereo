@@ -4,12 +4,14 @@ import Arrow from "../../Assets/arrowback.svg";
 import Search from "../../Assets/majesticons_search-line.svg";
 import RecentUploadCard from "../../Components/recentUploadCard";
 import Ad from "../../Assets/AD.jpeg";
+import UploadSongHeader from "../../Components/UploadSongHeader";
 
 export default function RecentUploads() {
   return (
     <>
       <UploadMusicLayout>
-        <div>
+        <UploadSongHeader title={"Recent uploads"} />
+        <div className="mt-20 sm:mt-0">
           <div className="bg-white w-full pb-10 sm:mx-5">
             <div
               id="container"

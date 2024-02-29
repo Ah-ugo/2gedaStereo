@@ -6,7 +6,7 @@ import Music from "../Assets/file-music.svg";
 import Navbar from "../Layout/Navbar";
 import DesktopNavbar from "../Layout/DesktopNavbar";
 
-export default function UploadSongHeader() {
+export default function UploadSongHeader({title, link}) {
   return (
     <div
       className="fixed w-full z-10 bg-white top-0"
@@ -28,7 +28,7 @@ export default function UploadSongHeader() {
         </button>
 
         <p style={{ fontSize: 20, fontWeight: "700" }} fontSize={"20px"}>
-          Upload
+          {title ?title : "Upload" }
         </p>
 
         <div style={{ alignItems: "center", display: "flex", gap: 10 }}>
